@@ -24,7 +24,7 @@ from vocode.streaming.transcriber.base_transcriber import BaseAsyncTranscriber
 from vocode.utils.sentry_utils import CustomSentrySpans, sentry_configured, sentry_create_span
 
 PUNCTUATION_TERMINATORS = [".", "!", "?"]
-NUM_RESTARTS = 5
+NUM_RESTARTS = float("inf")
 NUM_AUDIO_CHANNELS = 1
 
 
